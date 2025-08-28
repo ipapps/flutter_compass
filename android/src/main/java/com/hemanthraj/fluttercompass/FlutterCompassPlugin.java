@@ -142,7 +142,7 @@ public final class FlutterCompassPlugin implements FlutterPlugin, StreamHandler 
             @Override
             public void onSensorChanged(SensorEvent event) {
                 if (lastAccuracySensorStatus == SensorManager.SENSOR_STATUS_UNRELIABLE) {
-                    Log.d(TAG, "Compass sensor is unreliable, device calibration is needed.");
+                    //Log.d(TAG, "Compass sensor is unreliable, device calibration is needed.");
                     // Update the heading, even if the sensor is unreliable.
                     // This makes it possible to use a different indicator for the unreliable case,
                     // instead of just changing the RenderMode to NORMAL.
