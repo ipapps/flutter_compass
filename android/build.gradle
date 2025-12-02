@@ -20,15 +20,17 @@ android {
 
     namespace 'com.hemanthraj.fluttercompass'
 
-rootProject.allprojects {
-    repositories {
-        google()
-        jcenter()
-    defaultConfig {
-        minSdkVersion 20
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-    lintOptions {
-        disable 'InvalidPackage'
+    rootProject.allprojects {
+        repositories {
+            google()
+            jcenter()
+            defaultConfig {
+                minSdkVersion 20
+                testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+            }
+            lintOptions {
+                disable 'InvalidPackage'
+            }
+        }
     }
 }
