@@ -12,20 +12,20 @@ buildscript {
     }
 }
 
-rootProject.allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
+}
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 35
 
     namespace 'com.hemanthraj.fluttercompass'
 
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
     defaultConfig {
         minSdkVersion 20
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
